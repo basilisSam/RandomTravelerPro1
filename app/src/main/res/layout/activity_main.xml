@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,38 +8,114 @@
 
     <Button
         android:id="@+id/button"
-        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
         android:text="Search"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
     <EditText
         android:id="@+id/Price"
         android:layout_width="58dp"
         android:layout_height="44dp"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/Days"
-        android:layout_width="wrap_content"
+        android:layout_width="74dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
         android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/airport"
-        android:layout_width="290dp"
-        android:layout_height="43dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="99dp" />
+        android:layout_width="130dp"
+        android:layout_height="47dp"
+        android:layout_alignTop="@+id/Price"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Max Price"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/Days2"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignBottom="@+id/Days"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="-2dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignLeft="@+id/button"
+        android:layout_marginLeft="106dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="94dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/airport"
+        android:layout_alignTop="@+id/Days2"
+        android:text="Days From"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/airport" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="76dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/Days2"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginEnd="-18dp"
+        android:text="To"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:layout_alignRight="@+id/button"
+        android:layout_marginRight="-18dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="94dp"
+        android:layout_height="46dp"
+        android:layout_alignStart="@+id/airport"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="172dp"
+        android:text="From"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/airport" />
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Days"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/Days"
+        android:layout_marginLeft="0dp" />
+
+</RelativeLayout>
