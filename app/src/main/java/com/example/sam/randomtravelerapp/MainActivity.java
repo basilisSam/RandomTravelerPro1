@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Test and pray
+        //test376767
         //pernoume to value apo ta text
         From=(EditText)findViewById(R.id.from);
         Daysfrom=(EditText)findViewById(R.id.Days);
