@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Days"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/Days"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="129dp"
+        android:ems="10"
+        android:hint="Days"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Spinner
+        android:id="@+id/PersonNum"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Price"
+        android:layout_alignTop="@+id/Persons"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/Persons"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="195dp"
+        android:text="Persons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/Airport"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="248dp"
+        android:ems="10"
+        android:hint="                   From"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginBottom="114dp"
+        android:text="Search"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+</RelativeLayout>
